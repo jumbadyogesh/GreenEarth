@@ -538,6 +538,10 @@ header .container {
     pointer-events: none;
     color: var(--primary-green);
     font-size: 1.2rem;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .transformation-details {
@@ -762,4 +766,9 @@ footer {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+.sec{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
 }

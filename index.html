@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEarth - Protect Our Future</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Header & Navigation -->
+    <header id="main-header">
+        <div class="container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-leaf"></i> GreenEarth.
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#tips">Eco Tips</a></li>
+                    <li><a href="#impact">Impact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-up">
+                <h1>Live Sustainably. <br>Protect Our Future.</h1>
+                <p>Join the movement to create a greener, cleaner planet. Small steps lead to big changes.</p>
+                <div class="hero-buttons">
+                    <a href="#mission" class="btn btn-primary">Our Mission</a>
+                    <a href="#tips" class="btn btn-secondary">Get Tips</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="tree3.jpg" alt="Breathtaking lush green forest landscape" class="main-hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Our Mission</h2>
+                <p>We are dedicated to preserving nature through education and action.</p>
+            </div>
+            <div class="cards-grid">
+                <article class="card fade-up delay-100">
+                    <div class="card-icon">🌱</div>
+                    <h3>Reforestation</h3>
+                    <p>Planting trees to restore lost forests and combat climate change effectively.</p>
+                </article>
+                <article class="card fade-up delay-200">
+                    <div class="card-icon">💧</div>
+                    <h3>Water Conservation</h3>
+                    <p>Protecting our water sources and promoting efficient usage habits globally.</p>
+                </article>
+                <article class="card fade-up delay-300">
+                    <div class="card-icon">♻️</div>
+                    <h3>Zero Waste</h3>
+                    <p>Reducing landfill waste by encouraging recycling, composting, and reuse.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Eco Tips Section -->
+    <section id="tips" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Daily Eco Tips</h2>
+                <p>Simple changes you can make today.</p>
+            </div>
+            <!-- Tips Accordion using native HTML details/summary elements -->
+            <div class="tips-container fade-up">
+                <details class="tip-item" open>
+                    <summary class="tip-header">
+                        <h4>Turn Off the Tap</h4>
+                        <span class="toggle-icon"></span>
+                    </summary>
+                    <div class="tip-content">
+                        <p>Save up to 6 liters of water per minute by turning off the tap while brushing your teeth.</p>
+                    </div>
+                </details>
+
+                <details class="tip-item">
+                    <summary class="tip-header">
+                        <h4>Bring Your Own Bag</h4>
+                        <span class="toggle-icon"></span>
+                    </summary>
+                    <div class="tip-content">
+                        <p>Reusable bags save hundreds of plastic bags from ending up in landfills and oceans every
+                            year.</p>
+                    </div>
+                </details>
+
+                <details class="tip-item">
+                    <summary class="tip-header">
+                        <h4>Go Meatless Mondays</h4>
+                        <span class="toggle-icon"></span>
+                    </summary>
+                    <div class="tip-content">
+                        <p>Skipping meat for just one day a week reduces your carbon footprint significantly.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Statistics Section -->
+    <section id="impact" class="section">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>Our Impact</h2>
+                <p>Together, we are making a difference.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item fade-up">
+                    <div class="stat-number" data-target="50000">30000</div>
+                    <p>Trees Planted</p>
+                </div>
+                <div class="stat-item fade-up delay-200">
+                    <div class="stat-number" data-target="12000">8000</div>
+                    <p>Liters Water Saved</p>
+                </div>
+                <div class="stat-item fade-up delay-400">
+                    <div class="stat-number" data-target="3500">1500</div>
+                    <p>Volunteers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before vs After Earth Image Slider -->
+    <section id="transformation" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-up">
+                <h2>A Better Tomorrow</h2>
+                <p>Visualize the impact of our collective actions. Slide to see our goal.</p>
+            </div>
+
+            <div class="comparison-wrapper fade-up">
+                <div class="comparison-container">
+                    <!-- The "After" (Green) image/div -->
+                    <div class="img after-img">
+                        <div class="label label-after">Our Green Future</div>
+                    </div>
+                    <!-- The "Before" (Dry) image/div -->
+                    <div class="img before-img">
+                        <div class="label label-before">Current Path</div>
+                    </div>
+                    <!-- The Slider Handle -->
+                    <input type="range" min="0" max="100" value="50" class="comparison-slider-input" id="comp-slider">
+                    <div class="slider-line"></div>
+                    <div class="slider-button">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                </div>
+                <div class="transformation-details">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-cloud-sun-rain"></i>
+                        <span>Restored Ecosystems</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-wind"></i>
+                        <span>Clean Air quality</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>Biodiversity growth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>GreenEarth.</h3>
+                <p>Inspiring specific action for a sustainable future. Let's heal the planet together.</p>
+                <div class="socials">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Step</h4>
+                <p>hello@greenearth.org</p>
+                <p>+1 234 567 8900</p>
+            </div>
+            <div class="footer-col">
+                <h4>Nature Quote</h4>
+                <blockquote id="quote">"Nature does not hurry, yet everything is accomplished."</blockquote>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-legal">
+                <p>Copyright &copy; <span id="year"></span> GreenEarth. All rights reserved.</p>
+            </div>
+            <button id="back-to-top" aria-label="Back to Top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
